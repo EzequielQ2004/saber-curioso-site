@@ -16,33 +16,82 @@
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de</a></li>
-                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
         <section class="hero">
-            <h1>Bienvenido a Saber Curioso</h1>
-            <p class="subtitle">Descubre algo nuevo cada día</p>
-            <p>Artículos breves y fascinantes sobre ciencia, historia, tecnología y curiosidades del mundo.</p>
+            <div class="hero-content">
+                <h1>Bienvenido a Saber Curioso</h1>
+                <p class="subtitle">Descubre algo nuevo cada día</p>
+                <p class="hero-description">Artículos breves y fascinantes sobre ciencia, historia, tecnología y curiosidades del mundo que te sorprenderán.</p>
+                <div class="hero-actions">
+                    <a href="#articulos" class="btn btn-primary">Explorar Artículos</a>
+                    <a href="about.html" class="btn btn-secondary">Conocer Más</a>
+                </div>
+            </div>
         </section>
 
-        <section class="featured-articles">
-            <h2>Artículos Destacados</h2>
-            <div class="articles-grid">
-                <!-- Los artículos irán aquí -->
-                <div class="article-card">
-                    <h3>Próximamente...</h3>
-                    <p>Estamos preparando contenido fascinante para ti.</p>
-                    <a href="#" class="read-more">Leer más →</a>
+        <section id="articulos" class="featured-articles">
+            <div class="container">
+                <h2>Artículos Destacados</h2>
+                <p class="section-description">Descubre curiosidades fascinantes en diferentes categorías</p>
+                
+                <div class="articles-grid">
+                    <article class="article-card">
+                        <div class="article-category ciencia">Ciencia</div>
+                        <h3>Próximamente: Maravillas Científicas</h3>
+                        <p>Estamos preparando artículos fascinantes sobre los descubrimientos más increíbles de la ciencia moderna.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-category historia">Historia</div>
+                        <h3>Próximamente: Secretos Históricos</h3>
+                        <p>Descubre anécdotas y eventos históricos poco conocidos que cambiaron el mundo.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-category tecnologia">Tecnología</div>
+                        <h3>Próximamente: Innovaciones Futuras</h3>
+                        <p>Explora las tecnologías emergentes que están transformando nuestra forma de vivir.</p>
+                        <a href="#" class="read-more">Leer más →</a>
+                    </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <div class="container">
+                <h2>¿Quieres descubrir más curiosidades?</h2>
+                <p>Suscríbete para recibir artículos exclusivos y datos curiosos directamente en tu email.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="tu.email@ejemplo.com" required class="email-input">
+                    <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </form>
+                <p class="form-note">Sin spam, solo contenido interesante. Puedes darte de baja cuando quieras.</p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Saber Curioso. Descubre algo nuevo cada día.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">🔍 Saber Curioso</a>
+                    <p>Descubre algo nuevo cada día</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="about.html">Acerca de</a>
+                    <a href="#newsletter">Newsletter</a>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2024 Saber Curioso. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
